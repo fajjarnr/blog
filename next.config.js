@@ -55,6 +55,7 @@ const securityHeaders = [
 ]
 
 // For Cloudflare Pages, we need to use export output
+// Cloudflare Pages requires the nodejs_compat flag for certain Node.js APIs
 const isCloudflarePages = process.env.CLOUDFLARE_PAGES === '1'
 const output = process.env.EXPORT || isCloudflarePages ? 'export' : undefined
 const basePath = process.env.BASE_PATH || undefined
