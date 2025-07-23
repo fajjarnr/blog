@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+.git/
+*.md
+yarn-error.log
+.devcontainer/
+.husky/
+.vscode/
+.yarn/
+contentlayer2/
+.vercel/

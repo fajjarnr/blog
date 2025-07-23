@@ -9,11 +9,26 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/timlrx/tailwind-nextjs-starter-blog)
 
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/button)
+
 This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) blogging starter template. Version 2 is based on Next App directory with [React Server Component](https://nextjs.org/docs/getting-started/react-essentials#server-components) and uses [Contentlayer](https://www.contentlayer.dev/) to manage markdown content.
 
 Probably the most feature-rich Next.js markdown blogging template out there. Easily configurable and customizable. Perfect as a replacement to existing Jekyll and Hugo individual blogs.
 
 Check out the documentation below to get started.
+
+## Deploying to Cloudflare Pages
+
+This template can also be deployed to Cloudflare Pages. To deploy:
+
+1. Fork this repository
+2. Create a new project in Cloudflare Pages
+3. Connect your forked repository
+4. Set the build command to `yarn cf-pages:build`
+5. Set the build output directory to `.vercel/output/static`
+6. Add environment variables as needed (BUTTONDOWN_API_KEY, etc.)
+
+Alternatively, you can use the GitHub Actions workflow provided in `.github/workflows/cloudflare-pages.yml`.
 
 Facing issues? Check the [FAQ page](https://github.com/timlrx/tailwind-nextjs-starter-blog/wiki) and do a search on past issues. Feel free to open a new issue if none has been posted previously.
 

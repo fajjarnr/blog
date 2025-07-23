@@ -54,9 +54,11 @@ const securityHeaders = [
   },
 ]
 
-const output = process.env.EXPORT ? 'export' : undefined
+// For Cloudflare Pages, we need to use export output
+const isCloudflarePages = process.env.CLOUDFLARE_PAGES === '1'
+const output = process.env.EXPORT || isCloudflarePages ? 'export' : undefined
 const basePath = process.env.BASE_PATH || undefined
-const unoptimized = process.env.UNOPTIMIZED ? true : undefined
+const unoptimized = process.env.UNOPTIMIZED || isCloudflarePages ? true : undefined
 
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
